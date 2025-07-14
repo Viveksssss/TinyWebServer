@@ -1,6 +1,6 @@
 #ifndef THREADPOOL_H
 #define THREADPOOL_H
-#include "../CGImysql/mysql_connection.h"
+#include "../CGImysql/mysql_connection_pool.h"
 #include "../lock/locker.h"
 #include <cstdio>
 #include <exception>
@@ -14,6 +14,10 @@ template <typename T> class threadpool
     ~threadpool();
     bool append(T *request, int state);
     bool append_p(T *request);
+
+  private:
+    static void *worker(void *arg);
+    void run();
 
   private:
     int m_thread_number;
@@ -31,35 +35,40 @@ threadpool<T>::threadpool(int actor_model, connection_pool *connPool, int thread
     : m_actor_model(actor_model), m_thread_number(thread_number), m_max_requests(max_request), m_threads(nullptr),
       m_connPool(connPool)
 {
-    if (thread_number<=0 || max_request <= 0){
+    if (thread_number <= 0 || max_request <= 0)
+    {
         throw std::exception();
     }
     m_threads = new pthread_t[m_thread_number];
-    if(!m_threads){
+    if (!m_threads)
+    {
         throw std::exception();
     }
-    for(int i = 0;i<thread_number;++i){
-        if(pthread_create(m_threads+i,nullptr,worker,this)!=0){
+    for (int i = 0; i < thread_number; ++i)
+    {
+        if (pthread_create(m_threads + i, nullptr, worker, this) != 0)
+        {
             delete[] m_threads;
             throw std::exception();
         }
-        if(pthread_detach(m_threads[i])){
+        if (pthread_detach(m_threads[i]))
+        {
             delete[] m_threads;
             throw std::exception();
         }
     }
-        
 }
 
-template<typename T>
-threadpool<T>::~threadpool(){
+template <typename T> threadpool<T>::~threadpool()
+{
     delete[] m_threads;
 }
 
-template<typename T>
-bool threadpool<T>::append(T*request,int state){
+template <typename T> bool threadpool<T>::append(T *request, int state)
+{
     m_queuelocker.lock();
-    if(m_workqueue.size() >=m_max_requests){
+    if (m_workqueue.size() >= m_max_requests)
+    {
         m_queuelocker.unlock();
         return false;
     }
@@ -70,8 +79,8 @@ bool threadpool<T>::append(T*request,int state){
     return true;
 }
 
-template<typename T>
-bool threadpool<T>::append_p(T*request){
+template <typename T> bool threadpool<T>::append_p(T *request)
+{
     m_queuelocker.lock();
     if (m_workqueue.size() >= m_max_requests)
     {
@@ -84,58 +93,64 @@ bool threadpool<T>::append_p(T*request){
     return true;
 }
 
-template<typename T>
-void *threadpool<T>::worker(void*arg){
-    threadpool*pool = (threadpool*)arg;
+template <typename T> void *threadpool<T>::worker(void *arg)
+{
+    threadpool *pool = (threadpool *)arg;
     pool->run();
     return pool;
 }
 
-template<typename T>
-void threadpool<T>::run(){
-    while(true){
+template <typename T> void threadpool<T>::run()
+{
+    while (true)
+    {
         m_queuestat.wait();
         m_queuelocker.lock();
-        if(m_workqueue.empey()){
+        if (m_workqueue.empey())
+        {
             m_queuelocker.unlock();
             continue;
         }
-        T*request = m_workqueue.front();
+        T *request = m_workqueue.front();
         m_workqueue.pop_front();
         m_queuelocker.unlock();
-        if(!request)
+        if (!request)
             continue;
-        if(1 == m_actor_model){
-            if( 0 == request->m_state){
-                if(request->read_once()){
+        if (1 == m_actor_model)
+        {
+            if (0 == request->m_state)
+            {
+                if (request->read_once())
+                {
                     request->imporv = 1;
-                    connectionRAII mysqlcon(&request->mysql,m_connPool);
+                    connectionRAII mysqlcon(&request->mysql, m_connPool);
                     request->process();
                 }
-                else{
+                else
+                {
                     request->imporv = 1;
                     request->timer_flag = 1;
                 }
             }
-            else{
-                if(request->write()){
+            else
+            {
+                if (request->write())
+                {
                     request->imporv = 1;
                 }
-                else{
+                else
+                {
                     request->imporv = 1;
                     request->timer_flag = 1;
                 }
             }
         }
-        else{
-            connectionRAII mysqlcon(&requst->mysql,m_connPool);
+        else
+        {
+            connectionRAII mysqlcon(&requst->mysql, m_connPool);
             request->process();
         }
     }
 }
-
-
-
-
 
 #endif
