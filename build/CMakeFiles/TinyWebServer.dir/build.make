@@ -72,32 +72,112 @@ include CMakeFiles/TinyWebServer.dir/flags.make
 CMakeFiles/TinyWebServer.dir/codegen:
 .PHONY : CMakeFiles/TinyWebServer.dir/codegen
 
-CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
-CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o: CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp
-CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -MF CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d -o CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp
+CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp
+CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o -MF CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o.d -o CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp
 
-CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp > CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp > CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.i
 
-CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp -o CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp -o CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.s
+
+CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp
+CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o -MF CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o.d -o CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp
+
+CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp > CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.i
+
+CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp -o CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.s
+
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o -MF CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o.d -o CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp
+
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp > CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i
+
+CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp -o CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s
+
+CMakeFiles/TinyWebServer.dir/config.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/config.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/config.cpp
+CMakeFiles/TinyWebServer.dir/config.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TinyWebServer.dir/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/config.cpp.o -MF CMakeFiles/TinyWebServer.dir/config.cpp.o.d -o CMakeFiles/TinyWebServer.dir/config.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/config.cpp
+
+CMakeFiles/TinyWebServer.dir/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/config.cpp > CMakeFiles/TinyWebServer.dir/config.cpp.i
+
+CMakeFiles/TinyWebServer.dir/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/config.cpp -o CMakeFiles/TinyWebServer.dir/config.cpp.s
+
+CMakeFiles/TinyWebServer.dir/main.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/main.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/main.cpp
+CMakeFiles/TinyWebServer.dir/main.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TinyWebServer.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/main.cpp.o -MF CMakeFiles/TinyWebServer.dir/main.cpp.o.d -o CMakeFiles/TinyWebServer.dir/main.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/main.cpp
+
+CMakeFiles/TinyWebServer.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/main.cpp > CMakeFiles/TinyWebServer.dir/main.cpp.i
+
+CMakeFiles/TinyWebServer.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/main.cpp -o CMakeFiles/TinyWebServer.dir/main.cpp.s
+
+CMakeFiles/TinyWebServer.dir/webServer.cpp.o: CMakeFiles/TinyWebServer.dir/flags.make
+CMakeFiles/TinyWebServer.dir/webServer.cpp.o: /home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp
+CMakeFiles/TinyWebServer.dir/webServer.cpp.o: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TinyWebServer.dir/webServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TinyWebServer.dir/webServer.cpp.o -MF CMakeFiles/TinyWebServer.dir/webServer.cpp.o.d -o CMakeFiles/TinyWebServer.dir/webServer.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp
+
+CMakeFiles/TinyWebServer.dir/webServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TinyWebServer.dir/webServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp > CMakeFiles/TinyWebServer.dir/webServer.cpp.i
+
+CMakeFiles/TinyWebServer.dir/webServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TinyWebServer.dir/webServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp -o CMakeFiles/TinyWebServer.dir/webServer.cpp.s
 
 # Object files for target TinyWebServer
 TinyWebServer_OBJECTS = \
-"CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+"CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/config.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/main.cpp.o" \
+"CMakeFiles/TinyWebServer.dir/webServer.cpp.o"
 
 # External object files for target TinyWebServer
 TinyWebServer_EXTERNAL_OBJECTS =
 
-TinyWebServer: CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/config.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/main.cpp.o
+TinyWebServer: CMakeFiles/TinyWebServer.dir/webServer.cpp.o
 TinyWebServer: CMakeFiles/TinyWebServer.dir/build.make
 TinyWebServer: CMakeFiles/TinyWebServer.dir/compiler_depend.ts
 TinyWebServer: CMakeFiles/TinyWebServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TinyWebServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TinyWebServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TinyWebServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

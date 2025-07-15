@@ -6,7 +6,7 @@
 #include <exception>
 #include <list>
 #include <pthread.h>
-
+using namespace std;
 template <typename T> class threadpool
 {
   public:
@@ -106,7 +106,7 @@ template <typename T> void threadpool<T>::run()
     {
         m_queuestat.wait();
         m_queuelocker.lock();
-        if (m_workqueue.empey())
+        if (m_workqueue.empty())
         {
             m_queuelocker.unlock();
             continue;
@@ -122,13 +122,13 @@ template <typename T> void threadpool<T>::run()
             {
                 if (request->read_once())
                 {
-                    request->imporv = 1;
+                    request->improv = 1;
                     connectionRAII mysqlcon(&request->mysql, m_connPool);
                     request->process();
                 }
                 else
                 {
-                    request->imporv = 1;
+                    request->improv = 1;
                     request->timer_flag = 1;
                 }
             }
@@ -136,18 +136,18 @@ template <typename T> void threadpool<T>::run()
             {
                 if (request->write())
                 {
-                    request->imporv = 1;
+                    request->improv = 1;
                 }
                 else
                 {
-                    request->imporv = 1;
+                    request->improv = 1;
                     request->timer_flag = 1;
                 }
             }
         }
         else
         {
-            connectionRAII mysqlcon(&requst->mysql, m_connPool);
+            connectionRAII mysqlcon(&request->mysql, m_connPool);
             request->process();
         }
     }

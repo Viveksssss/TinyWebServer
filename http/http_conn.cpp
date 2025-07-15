@@ -9,6 +9,8 @@
 #include <sys/uio.h>
 #include <utility>
 
+using namespace std;
+
 /* 响应头*/
 const char *ok_200_title = "OK";
 const char *error_400_title = "Bad Request";
@@ -33,14 +35,18 @@ void http_conn::initmysql_result(connection_pool *connPool)
     connectionRAII mysqlcon(&mysql, connPool);
 
     // 检索username,passwd
-    if (mysql_query(mysql, "select username,passwd from username,passwd from user"))
+    if (mysql_query(mysql, "select username,passwd  from user"))
     {
-        LOG_ERROR("SELCT error:%s\n", mysql_error(mysql));
+        // LOG_ERROR("SELCT error:%s\n", mysql_error(mysql));
     }
 
     // 获取查询数据
     MYSQL_RES *result = mysql_store_result(mysql);
 
+    if (result == nullptr)
+    {
+        std::cout << "result is nullptr" << endl;
+    }
     // 返回数据的列数
     int num_fields = mysql_num_fields(result);
 
@@ -330,7 +336,7 @@ http_conn::HTTP_CODE http_conn::parse_headers(char *text)
     }
     else
     {
-        LOG_INFO("oop!unknow header: %s", text);
+        // LOG_INFO("oop!unknow header: %s", text);
     }
     return HTTP_CODE::NO_REQUEST;
 }
@@ -359,7 +365,7 @@ http_conn::HTTP_CODE http_conn::process_read()
     {
         text = get_line();
         m_start_line = m_checked_idx;
-        LOG_INFO("%s", text);
+        // LOG_INFO("%s", text);
         switch (m_check_state)
         {
         case CHECK_STATE::CHECK_STATE_REQUESTLINE: {
@@ -417,7 +423,7 @@ http_conn::HTTP_CODE http_conn::do_request()
         strncpy(m_real_file + len, m_url_real, FILENAME_LEN - len - 1);
         free(m_url_real);
         char name[100], password[100];
-        // user=123&passwd=123
+        // user=123&password=123
         int i;
         for (i = 5; m_string[i] != '&'; ++i)
         {
@@ -425,7 +431,7 @@ http_conn::HTTP_CODE http_conn::do_request()
         }
         name[i - 5] = '\0';
         int j = 0;
-        for (i = i + 8; m_string[i] != '\0'; ++i, ++j)
+        for (i = i + 10; m_string[i] != '\0'; ++i, ++j)
         {
             password[j] = m_string[i];
         }
@@ -639,7 +645,7 @@ bool http_conn::add_response(const char *format, ...)
     }
     m_write_idx += len;
     va_end(arg_list);
-    LOG_INFO("request:%s", m_write_buf);
+    // LOG_INFO("request:%s", m_write_buf);
     return true;
 }
 

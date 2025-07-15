@@ -1,8 +1,38 @@
 [
 {
   "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
-  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-  "file": "/home/vivek/Codes/Cpp/TinyWebServer/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-  "output": "CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/CGImysql/mysql_connection_pool.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/http/http_conn.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/timer/lst_timer.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/config.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/config.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/config.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/config.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/main.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/main.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/main.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/vivek/Codes/Cpp/TinyWebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/TinyWebServer.dir/webServer.cpp.o -c /home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp",
+  "file": "/home/vivek/Codes/Cpp/TinyWebServer/webServer.cpp",
+  "output": "CMakeFiles/TinyWebServer.dir/webServer.cpp.o"
 }
 ]

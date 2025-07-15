@@ -1,0 +1,30 @@
+2025-07-02 14:24:53.1752560693 [erro]:Mysql Error
+2025-07-02 14:28:01.1752560881 [erro]:Mysql Error2
+2025-07-02 14:30:53.1752561053 [erro]:Mysql Error2
+2025-07-02 14:31:40.1752561100 [erro]:Mysql Error2:
+2025-07-02 15:06:52.1752563212 [erro]:Mysql Error2:
+2025-07-02 15:14:49.1752563689 [erro]:Mysql Error2:
+2025-07-02 15:14:53.1752563693 [erro]:Mysql Error2:
+2025-07-02 15:16:22.1752563782 [erro]:Mysql Error2:
+2025-07-02 15:18:37.1752563917 [erro]:Mysql Error2:
+2025-07-02 15:18:42.1752563922 [erro]:Mysql Error2:
+2025-07-02 15:31:14.1752564674 [erro]:Mysql Error2:
+2025-07-02 16:14:17.1752567257 [erro]:SELCT error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from user' at line 1
+
+2025-07-02 16:14:26.1752567266 [erro]:SELCT error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from user' at line 1
+
+2025-07-02 16:18:15.1752567495 [erro]:SELCT error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from user' at line 1
+
+2025-07-02 16:22:01.1752567721 [erro]:SELCT error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from user' at line 1
+
+2025-07-02 16:22:16.1752567736 [erro]:SELCT error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from user' at line 1
+
+2025-07-02 16:31:48.1752568308 [info]:timer tick
+2025-07-02 16:31:53.1752568313 [info]:timer tick
+2025-07-02 16:31:58.1752568318 [info]:timer tick
+2025-07-02 16:32:03.1752568323 [info]:timer tick
+2025-07-02 16:32:08.1752568328 [info]:timer tick
+2025-07-02 16:32:13.1752568333 [info]:timer tick
+2025-07-02 16:33:15.1752568395 [info]:timer tick
+2025-07-02 16:55:36.1752569736 [info]:timer tick
+2025-07-02 16:55:41.1752569741 [info]:timer tick

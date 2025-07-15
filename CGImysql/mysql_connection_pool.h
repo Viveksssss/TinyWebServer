@@ -2,7 +2,7 @@
 #define _CONNECTION_POOL_
 
 #include "../lock/locker.h"
-#include "../log/log.h"
+// #include "../log/log.h"
 #include <error.h>
 #include <iostream>
 #include <list>
@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <string>
+
+using namespace std;
 
 class connection_pool {
 public:

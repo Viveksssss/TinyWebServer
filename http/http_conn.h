@@ -24,9 +24,9 @@
 
 #include "../CGImysql/mysql_connection_pool.h"
 #include "../lock/locker.h"
-#include "../log/log.h"
+// #include "../log/log.h"
 #include "../timer/lst_timer.h"
-
+using namespace std;
 class http_conn
 {
   public:

@@ -1,3 +1,0 @@
-/home/vivek/Codes/Cpp/TinyWebServer/out/build/GCC 15.1.1 x86_64-pc-linux-gnu/CMakeFiles/TinyWebServer.dir
-/home/vivek/Codes/Cpp/TinyWebServer/out/build/GCC 15.1.1 x86_64-pc-linux-gnu/CMakeFiles/edit_cache.dir
-/home/vivek/Codes/Cpp/TinyWebServer/out/build/GCC 15.1.1 x86_64-pc-linux-gnu/CMakeFiles/rebuild_cache.dir

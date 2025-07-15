@@ -129,29 +129,149 @@ TinyWebServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/build
 .PHONY : TinyWebServer/fast
 
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.o
+CGImysql/mysql_connection_pool.o: CGImysql/mysql_connection_pool.cpp.o
+.PHONY : CGImysql/mysql_connection_pool.o
 
 # target to build an object file
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
+CGImysql/mysql_connection_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.o
+.PHONY : CGImysql/mysql_connection_pool.cpp.o
 
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.i: CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.i
+CGImysql/mysql_connection_pool.i: CGImysql/mysql_connection_pool.cpp.i
+.PHONY : CGImysql/mysql_connection_pool.i
 
 # target to preprocess a source file
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+CGImysql/mysql_connection_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.i
+.PHONY : CGImysql/mysql_connection_pool.cpp.i
 
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.s: CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.s
+CGImysql/mysql_connection_pool.s: CGImysql/mysql_connection_pool.cpp.s
+.PHONY : CGImysql/mysql_connection_pool.s
 
 # target to generate assembly for a file
-CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+CGImysql/mysql_connection_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/CGImysql/mysql_connection_pool.cpp.s
+.PHONY : CGImysql/mysql_connection_pool.cpp.s
+
+config.o: config.cpp.o
+.PHONY : config.o
+
+# target to build an object file
+config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/config.cpp.o
+.PHONY : config.cpp.o
+
+config.i: config.cpp.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/config.cpp.i
+.PHONY : config.cpp.i
+
+config.s: config.cpp.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/config.cpp.s
+.PHONY : config.cpp.s
+
+http/http_conn.o: http/http_conn.cpp.o
+.PHONY : http/http_conn.o
+
+# target to build an object file
+http/http_conn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.o
+.PHONY : http/http_conn.cpp.o
+
+http/http_conn.i: http/http_conn.cpp.i
+.PHONY : http/http_conn.i
+
+# target to preprocess a source file
+http/http_conn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.i
+.PHONY : http/http_conn.cpp.i
+
+http/http_conn.s: http/http_conn.cpp.s
+.PHONY : http/http_conn.s
+
+# target to generate assembly for a file
+http/http_conn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/http/http_conn.cpp.s
+.PHONY : http/http_conn.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+timer/lst_timer.o: timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.o
+
+# target to build an object file
+timer/lst_timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.cpp.o
+
+timer/lst_timer.i: timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.i
+
+# target to preprocess a source file
+timer/lst_timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.cpp.i
+
+timer/lst_timer.s: timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.s
+
+# target to generate assembly for a file
+timer/lst_timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.cpp.s
+
+webServer.o: webServer.cpp.o
+.PHONY : webServer.o
+
+# target to build an object file
+webServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/webServer.cpp.o
+.PHONY : webServer.cpp.o
+
+webServer.i: webServer.cpp.i
+.PHONY : webServer.i
+
+# target to preprocess a source file
+webServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/webServer.cpp.i
+.PHONY : webServer.cpp.i
+
+webServer.s: webServer.cpp.s
+.PHONY : webServer.s
+
+# target to generate assembly for a file
+webServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyWebServer.dir/build.make CMakeFiles/TinyWebServer.dir/webServer.cpp.s
+.PHONY : webServer.cpp.s
 
 # Help Target
 help:
@@ -162,9 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TinyWebServer"
-	@echo "... CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.o"
-	@echo "... CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.i"
-	@echo "... CMakeFiles/4.0.3-dirty/CompilerIdCXX/CMakeCXXCompilerId.s"
+	@echo "... CGImysql/mysql_connection_pool.o"
+	@echo "... CGImysql/mysql_connection_pool.i"
+	@echo "... CGImysql/mysql_connection_pool.s"
+	@echo "... config.o"
+	@echo "... config.i"
+	@echo "... config.s"
+	@echo "... http/http_conn.o"
+	@echo "... http/http_conn.i"
+	@echo "... http/http_conn.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... timer/lst_timer.o"
+	@echo "... timer/lst_timer.i"
+	@echo "... timer/lst_timer.s"
+	@echo "... webServer.o"
+	@echo "... webServer.i"
+	@echo "... webServer.s"
 .PHONY : help
 
 

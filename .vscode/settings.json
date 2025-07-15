@@ -82,5 +82,6 @@
         "variant": "cpp",
         "csignal": "cpp",
         "cerrno": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
